@@ -1,0 +1,11 @@
+{
+  "template_name": "Try Google App Engine for Java",
+  "template_description": "Starter code for a Google App Engine app in Java.",
+  "show_files": [
+    "build.xml",
+    "src/myapp/DemoServlet.java",
+    "war/index.html",
+    "war/WEB-INF/appengine-web.xml",
+    "war/WEB-INF/web.xml"
+  ]
+}

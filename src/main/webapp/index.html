@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <title>App Engine Demo</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="result">Loading...</div>
+
+    <script>
+$(document).ready(function() {
+  $.getJSON('/demo', function(data) {
+    console.log(data);
+    $('#result').hide();
+  });
+});
+    </script>
+  </body>
+</html>
