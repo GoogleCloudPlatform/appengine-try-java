@@ -1,6 +1,6 @@
 {
-  "template_name": "Try Google App Engine for Java",
-  "template_description": "Starter code for a Google App Engine app in Java.",
+  "project_name": "Hello World, Java",
+  "project_description": "Starter code for a Google App Engine app in Java.",
   "show_files": [
     "build.xml",
     "src/myapp/DemoServlet.java",
