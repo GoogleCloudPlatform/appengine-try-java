@@ -2,10 +2,13 @@
   "project_name": "Hello World - Java",
   "project_description": "Starter code for a Google App Engine app in Java.",
   "show_files": [
+    "src/main/java/myapp/DemoServlet.java",
     "build.xml",
-    "src/myapp/DemoServlet.java",
-    "war/index.html",
-    "war/WEB-INF/appengine-web.xml",
-    "war/WEB-INF/web.xml"
-  ]
+    "pom.xml",
+    "src/main/webapp/index.html",
+    "src/main/webapp/WEB-INF/appengine-web.xml",
+    "src/main/webapp/WEB-INF/logging.properties",
+    "src/main/webapp/WEB-INF/web.xml"
+  ],
+  "read_only_demo_url": "https://try-java-demo.cloud-playground.appspot.com/"
 }
