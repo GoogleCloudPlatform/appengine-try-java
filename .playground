@@ -10,5 +10,5 @@
     "src/main/webapp/WEB-INF/logging.properties",
     "src/main/webapp/WEB-INF/web.xml"
   ],
-  "read_only_demo_url": "https://try-java-demo.cloud-playground.appspot.com/"
+  "read_only_demo_url": "https://try-java-demo-dot-cloud-playground.appspot.com/"
 }
