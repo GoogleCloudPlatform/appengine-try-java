@@ -10,8 +10,7 @@
     <script>
 $(document).ready(function() {
   $.getJSON('/demo', function(data) {
-    console.log(data);
-    $('#result').hide();
+    $('#result').html("Hello, " + data.name);
   });
 });
     </script>
