@@ -88,6 +88,7 @@
                 <artifactId>gcloud-maven-plugin</artifactId>
                 <version>2.0.9.88.v20151125</version>
                 <configuration>
+                    <promote>true</promote>
                 </configuration>
             </plugin>
         </plugins>
