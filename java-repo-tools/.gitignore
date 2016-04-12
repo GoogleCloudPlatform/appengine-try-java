@@ -1,4 +1,6 @@
-## https://github.com/github/gitignore/blob/master/Java.gitignore
+service-account.json
+
+### Java ###
 *.class
 
 # Mobile Tools for Java (J2ME)
@@ -12,7 +14,7 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
-## https://github.com/github/gitignore/blob/master/Maven.gitignore
+# Maven
 target/
 pom.xml.tag
 pom.xml.releaseBackup
