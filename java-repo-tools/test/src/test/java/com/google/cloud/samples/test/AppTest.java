@@ -14,18 +14,20 @@
  * limitations under the License.
  */
 
-package myapp;
+package com.google.cloud.samples.test;
 
-import java.io.IOException;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import static com.google.common.truth.Truth.assertThat;
 
-public class DemoServlet extends HttpServlet {
-  @Override
-  public void doGet(HttpServletRequest req, HttpServletResponse resp)
-      throws IOException {
-    resp.setContentType("text/plain");
-    resp.getWriter().println("{ \"name\": \"World\" }");
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.JUnit4;
+
+/**
+ * Unit tests for {@link App}.
+ */
+@RunWith(JUnit4.class)
+public class AppTest {
+  @Test public void greeting_returnsHelloWorld() {
+    assertThat(App.greeting()).named("greeting").isEqualTo("Hello World!");
   }
 }
