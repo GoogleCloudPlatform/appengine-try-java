@@ -30,9 +30,9 @@
    </parent>
 
     <properties>
-        <appengine.app.version>1</appengine.app.version>
-        <appengine.target.version>1.9.37</appengine.target.version>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+      <appengine.app.version>1</appengine.app.version>
+      <appengine.target.version>1.9.38</appengine.target.version>
+      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <dependencies>
