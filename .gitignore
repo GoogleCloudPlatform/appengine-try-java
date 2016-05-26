@@ -1,3 +1,11 @@
+# Packages
+dist
+build
+bin
+var
+sdist
+target
+
 ## https://github.com/github/gitignore/blob/master/Java.gitignore
 *.class
 
