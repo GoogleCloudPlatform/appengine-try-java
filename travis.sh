@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # Copyright 2016 Google Inc. All Rights Reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -11,13 +12,25 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-language: java
-jdk:
-- oraclejdk7
-- oraclejdk8
-script: mvn verify
-after_success:
-- bash <(curl -s https://codecov.io/bash)
-branches:
-  only:
-  - master
+
+set -e
+set -x
+# Set pipefail so that `egrep` does not eat the exit code.
+set -o pipefail
+
+mvn --batch-mode clean verify | egrep -v "(^\[INFO\] Download|^\[INFO\].*skipping)"
+
+# Run tests using App Engine local devserver.
+test_localhost() {
+  # Pin to a specific commit so that java-repo-tools can be updated
+  # independently of this repo.
+  git clone https://github.com/GoogleCloudPlatform/java-repo-tools.git
+  (
+  cd java-repo-tools
+  git checkout 74755a28f01aedf57992f473eb2d0201b1e04f2a
+  )
+
+  ./java-repo-tools/scripts/test-localhost.sh appengine .
+}
+test_localhost
+
