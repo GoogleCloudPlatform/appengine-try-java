@@ -22,14 +22,7 @@ mvn --batch-mode clean verify | egrep -v "(^\[INFO\] Download|^\[INFO\].*skippin
 
 # Run tests using App Engine local devserver.
 test_localhost() {
-  # Pin to a specific commit so that java-repo-tools can be updated
-  # independently of this repo.
   git clone https://github.com/GoogleCloudPlatform/java-repo-tools.git
-  (
-  cd java-repo-tools
-  git checkout 74755a28f01aedf57992f473eb2d0201b1e04f2a
-  )
-
   ./java-repo-tools/scripts/test-localhost.sh appengine .
 }
 test_localhost

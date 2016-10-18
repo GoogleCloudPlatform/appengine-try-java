@@ -15,6 +15,10 @@
 language: java
 jdk:
   - oraclejdk8
+addons:
+  apt:
+    packages:
+      - expect
 # Skip the install step, since Maven will download the dependencies we need
 # when the test build runs.
 # http://stackoverflow.com/q/31945809/101923
