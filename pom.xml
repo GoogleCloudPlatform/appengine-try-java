@@ -23,15 +23,14 @@
 
     <!-- Parent POM defines common plugins and properties. -->
     <parent>
-      <groupId>com.google.cloud</groupId>
+      <groupId>com.google.cloud.samples</groupId>
       <artifactId>shared-configuration</artifactId>
       <version>1.0.0</version>
-      <relativePath>java-repo-tools</relativePath>
    </parent>
 
     <properties>
       <appengine.app.version>1</appengine.app.version>
-      <appengine.target.version>1.9.38</appengine.target.version>
+      <appengine.target.version>1.9.44</appengine.target.version>
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
