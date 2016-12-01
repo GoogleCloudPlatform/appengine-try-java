@@ -23,7 +23,7 @@ mvn --batch-mode clean verify | egrep -v "(^\[INFO\] Download|^\[INFO\].*skippin
 # Run tests using App Engine local devserver.
 test_localhost() {
   git clone https://github.com/GoogleCloudPlatform/java-repo-tools.git
-  ./java-repo-tools/scripts/test-localhost.sh appengine .
+  ./java-repo-tools/scripts/test-localhost.sh appengine:run .
 }
 test_localhost
 
