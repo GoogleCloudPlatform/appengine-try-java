@@ -103,8 +103,8 @@
 
             <plugin>
                 <groupId>com.google.appengine</groupId>
-                <artifactId>appengine-maven-plugin</artifactId>
-                <version>${appengine.target.version}</version>
+                <artifactId>gcloud-maven-plugin</artifactId>
+                <version>2.0.9.88.v20151125</version>
                 <configuration>
                 </configuration>
             </plugin>
