@@ -1,4 +1,5 @@
 java-repo-tools
+service-account.json
 
 ## https://github.com/github/gitignore/blob/master/Java.gitignore
 *.class
