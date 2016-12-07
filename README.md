@@ -1,19 +1,25 @@
 # Hello Google App Engine for Java™
 
-[![Build Status](https://travis-ci.org/GoogleCloudPlatform/appengine-try-java.svg?branch=master)](https://travis-ci.org/GoogleCloudPlatform/appengine-try-java)
+[![Build
+Status](https://travis-ci.org/GoogleCloudPlatform/appengine-try-java.svg?branch=master)](https://travis-ci.org/GoogleCloudPlatform/appengine-try-java)
 
 This sample shows you how to deploy a simple "Hello World" application to
 [Google App Engine](https://cloud.google.com/appengine/docs/java/).
 
 ## Before you begin
 
-1.  Download and install the [Google Cloud SDK](https://cloud.google.com/sdk/docs/).
+1.  Download and install the [Google Cloud
+    SDK](https://cloud.google.com/sdk/docs/).
 1.  [Install and configure Apache Maven](http://maven.apache.org/index.html).
 1.  [Create a new Google Cloud Platform project, or use an existing
 		one](https://console.cloud.google.com/project).
 1.  Initialize the Cloud SDK.
 
-			 gcloud init
+        gcloud init
+
+1.  Install the Cloud SDK `app-engine-java` component.
+
+        gcloud components install app-engine-java
 
 ## Deploying to App Engine
 
@@ -35,8 +41,11 @@ the Google Cloud Console](https://console.cloud.google.com/appengine/versions).
 
 ## Next steps
 
-1.  Read the [App Engine documentation](https://cloud.google.com/appengine/docs/java/).
-1.  Explore the other [Google Cloud Platform sample applications](https://github.com/GoogleCloudPlatform/java-docs-sample://github.com/GoogleCloudPlatform/java-docs-samples) for Java™.
+1.  Read the [App Engine
+    documentation](https://cloud.google.com/appengine/docs/java/).
+1.  Explore the other [Google Cloud Platform sample
+    applications](https://github.com/GoogleCloudPlatform/java-docs-sample) for
+    Java™.
 
 ## Contributing changes
 
