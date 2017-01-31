@@ -34,7 +34,7 @@
     <maven.compiler.source>1.7</maven.compiler.source>
 
     <appengine.app.version>1</appengine.app.version>
-    <appengine.target.version>1.9.48</appengine.target.version>
+    <appengine.target.version>1.9.49</appengine.target.version>
     <appengine-maven-plugin-version>1.0.0</appengine-maven-plugin-version>
   </properties>
 
