@@ -35,7 +35,7 @@
 
     <appengine.app.version>1</appengine.app.version>
     <appengine.target.version>1.9.51</appengine.target.version>
-    <appengine-maven-plugin-version>1.0.0</appengine-maven-plugin-version>
+    <appengine-maven-plugin-version>1.2.1</appengine-maven-plugin-version>
   </properties>
 
   <dependencies>
