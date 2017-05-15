@@ -16,16 +16,38 @@
 
 package myapp;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+
+import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 public class DemoServlet extends HttpServlet {
-  @Override
-  public void doGet(HttpServletRequest req, HttpServletResponse resp)
-      throws IOException {
-    resp.setContentType("text/plain");
-    resp.getWriter().println("{ \"name\": \"World\" }");
-  }
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        //获取http://120.27.103.151:8088/JWebDemoByIDE/MyServlet?name=liangjialiang 问号后面的值
+        String name = req.getParameter("name");
+        String age = req.getParameter("age");
+        resp.getWriter().write(name);
+    }
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        BufferedReader b =  req.getReader();
+        String line;
+        StringBuilder s = new StringBuilder();
+        while((line = b.readLine())!=null){
+            s.append(line);
+        }
+        resp.getWriter().write(s.toString());
+    }
+    @Override
+    protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+    }
+    @Override
+    protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+    }
 }

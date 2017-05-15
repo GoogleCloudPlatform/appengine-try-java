@@ -10,7 +10,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>demo</servlet-name>
-        <url-pattern>/demo</url-pattern>
+        <url-pattern>/fxin-servlet</url-pattern>
     </servlet-mapping>
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>

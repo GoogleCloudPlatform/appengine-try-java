@@ -27,7 +27,7 @@ To run the application locally, use the [Maven App Engine
 plugin](https://cloud.google.com/appengine/docs/java/tools/using-maven).
 
     mvn clean appengine:run
-
+    
 View the app at [localhost:8080](http://localhost:8080).
 
 To deploy the app to App Engine, run
