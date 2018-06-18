@@ -23,7 +23,7 @@ addons:
 before_install:
   - openssl aes-256-cbc -K $encrypted_c9b056f6a4fd_key -iv $encrypted_c9b056f6a4fd_iv -in service-account.json.enc -out service-account.json -d && export GOOGLE_APPLICATION_CREDENTIALS="$(pwd)/service-account.json"
   - export GOOGLE_CLOUD_PROJECT=cloud-samples-tests
-install: sudo ./setup_tests.sh
+install: sudo ./setup_tests.sh && export PATH="${HOME}/google-cloud-sdk/bin:${PATH}"
 script: ./travis.sh
 after_success:
   - mvn clean cobertura:cobertura coveralls:report
