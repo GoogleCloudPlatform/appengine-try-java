@@ -29,16 +29,12 @@ fi
 
 # Install gcloud command-line utility
 # https://cloud.google.com/sdk/
-# First check that the command is not yet installed with `command -v`
-# http://stackoverflow.com/a/677212/101923
-if ! command -v gcloud  >/dev/null 2>&1; then
-	(
-	cd "${HOME}"
-	wget https://dl.google.com/dl/cloudsdk/release/google-cloud-sdk.tar.gz --directory-prefix="${HOME}"
-	tar xzf google-cloud-sdk.tar.gz
-	./google-cloud-sdk/install.sh --usage-reporting false --path-update false --command-completion false
-	)
-fi
+# Can't update Java App Engine component with already installed `gcloud` command
+cd "${HOME}"
+wget https://dl.google.com/dl/cloudsdk/release/google-cloud-sdk.tar.gz --directory-prefix="${HOME}"
+tar xzf google-cloud-sdk.tar.gz
+./google-cloud-sdk/install.sh --usage-reporting false --path-update false --command-completion false
+export PATH="${HOME}/google-cloud-sdk/bin:${PATH}"
 
 gcloud -q components update app-engine-java
 
