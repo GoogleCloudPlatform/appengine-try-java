@@ -44,7 +44,7 @@ the Google Cloud Console](https://console.cloud.google.com/appengine/versions).
 1.  Read the [App Engine
     documentation](https://cloud.google.com/appengine/docs/java/).
 1.  Explore the other [Google Cloud Platform sample
-    applications](https://github.com/GoogleCloudPlatform/java-docs-sample) for
+    applications](https://github.com/GoogleCloudPlatform/java-docs-samples) for
     Java™.
 
 ## Contributing changes
