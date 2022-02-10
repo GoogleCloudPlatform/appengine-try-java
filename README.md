@@ -1,3 +1,9 @@
+![status: inactive](https://img.shields.io/badge/status-inactive-red.svg)
+
+This project is no longer actively developed or maintained.
+
+For new work on this check out [these AppEngine samples](https://github.com/GoogleCloudPlatform/java-docs-samples/tree/main/appengine-java11).
+
 # Hello Google App Engine for Java™
 
 [![Build
