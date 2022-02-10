@@ -44,8 +44,9 @@ the Google Cloud Console](https://console.cloud.google.com/appengine/versions).
 1.  Read the [App Engine
     documentation](https://cloud.google.com/appengine/docs/java/).
 1.  Explore the other [Google Cloud Platform sample
-    applications](https://github.com/GoogleCloudPlatform/java-docs-sample) for
+    applications](https://github.com/GoogleCloudPlatform/java-docs-samples) for
     Java™.
+1.  Explore how to [deploy a Spring Boot to App Engine](https://codelabs.developers.google.com/codelabs/cloud-app-engine-springboot/index.html) standard environment.  
 
 ## Contributing changes
 
